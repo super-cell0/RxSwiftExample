@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049608512A74B6890029BE2C /* PHPhotoLibraryRxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049608502A74B6890029BE2C /* PHPhotoLibraryRxSwift.swift */; };
 		04D40AA72A6E7D5700814FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D40AA62A6E7D5700814FB3 /* AppDelegate.swift */; };
 		04D40AA92A6E7D5700814FB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D40AA82A6E7D5700814FB3 /* SceneDelegate.swift */; };
 		04D40AAB2A6E7D5700814FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D40AAA2A6E7D5700814FB3 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049608502A74B6890029BE2C /* PHPhotoLibraryRxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPhotoLibraryRxSwift.swift; sourceTree = "<group>"; };
 		04D40AA32A6E7D5700814FB3 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D40AA62A6E7D5700814FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D40AA82A6E7D5700814FB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				04D40ABC2A6E806D00814FB3 /* PhotoCell.swift */,
 				04D40ABE2A6E845200814FB3 /* ExtensionAll.swift */,
 				04D40AC02A6F579800814FB3 /* PhotoWriter.swift */,
+				049608502A74B6890029BE2C /* PHPhotoLibraryRxSwift.swift */,
 				04D40AAC2A6E7D5700814FB3 /* Main.storyboard */,
 				04D40AAF2A6E7D5700814FB3 /* Assets.xcassets */,
 				04D40AB12A6E7D5700814FB3 /* LaunchScreen.storyboard */,
@@ -222,6 +225,7 @@
 				04D40AAB2A6E7D5700814FB3 /* ViewController.swift in Sources */,
 				04D40ABF2A6E845200814FB3 /* ExtensionAll.swift in Sources */,
 				04D40ABD2A6E806D00814FB3 /* PhotoCell.swift in Sources */,
+				049608512A74B6890029BE2C /* PHPhotoLibraryRxSwift.swift in Sources */,
 				04D40AA72A6E7D5700814FB3 /* AppDelegate.swift in Sources */,
 				04D40AA92A6E7D5700814FB3 /* SceneDelegate.swift in Sources */,
 				04D40ABB2A6E803200814FB3 /* PhotoCollectionViewController.swift in Sources */,
@@ -300,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -375,11 +379,12 @@
 				DEVELOPMENT_TEAM = 7DR2VQYR3G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxSwiftExample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请求访问相册权限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,11 +409,12 @@
 				DEVELOPMENT_TEAM = 7DR2VQYR3G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxSwiftExample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "请求访问相册权限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

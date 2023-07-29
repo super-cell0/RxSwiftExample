@@ -2,8 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ask-U8-rql">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -19,19 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ozg-v1-f1l">
-                                <rect key="frame" x="20" y="123" width="353" height="353"/>
+                                <rect key="frame" x="16" y="123" width="361" height="361"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="353" id="hhE-sr-w5l"/>
+                                    <constraint firstAttribute="height" constant="361" id="hhE-sr-w5l"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cao-io-bQ0">
-                                <rect key="frame" x="70" y="576" width="90" height="44"/>
+                                <rect key="frame" x="70" y="584" width="90" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="01B-Dx-Ox4"/>
                                     <constraint firstAttribute="height" constant="44" id="mLN-Sm-Jov"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="clear">
+                                <buttonConfiguration key="configuration" style="filled" title="清除">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -39,13 +39,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFn-VL-GcT">
-                                <rect key="frame" x="233" y="576" width="90" height="44"/>
+                                <rect key="frame" x="233" y="584" width="90" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="2ma-8y-wd5"/>
                                     <constraint firstAttribute="height" constant="44" id="4GT-JR-QMK"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="save">
+                                <buttonConfiguration key="configuration" style="filled" title="保存">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -56,9 +56,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ozg-v1-f1l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="4Ct-Z9-S8O"/>
+                            <constraint firstItem="ozg-v1-f1l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="4Ct-Z9-S8O"/>
                             <constraint firstItem="ozg-v1-f1l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="80H-II-pDV"/>
-                            <constraint firstAttribute="trailing" secondItem="ozg-v1-f1l" secondAttribute="trailing" constant="20" id="KMF-2f-Cym"/>
+                            <constraint firstAttribute="trailing" secondItem="ozg-v1-f1l" secondAttribute="trailing" constant="16" id="KMF-2f-Cym"/>
                             <constraint firstItem="Cao-io-bQ0" firstAttribute="top" secondItem="ozg-v1-f1l" secondAttribute="bottom" constant="100" id="RRS-Nl-da9"/>
                             <constraint firstItem="Cao-io-bQ0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="cDb-SY-Ulg"/>
                             <constraint firstAttribute="trailing" secondItem="QFn-VL-GcT" secondAttribute="trailing" constant="70" id="hO4-ip-7QU"/>
@@ -66,8 +66,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y9Y-af-Kxg">
-                        <barButtonItem key="rightBarButtonItem" id="V9j-8X-1FU">
-                            <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                        <barButtonItem key="rightBarButtonItem" title="添加图片" id="V9j-8X-1FU">
                             <connections>
                                 <action selector="addAction:" destination="BYZ-38-t0r" id="zXN-wB-9g5"/>
                             </connections>
@@ -154,7 +153,6 @@
     </scenes>
     <resources>
         <image name="batman" width="2697" height="2088"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
